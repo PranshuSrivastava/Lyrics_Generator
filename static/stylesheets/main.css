@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: san-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.808),
+      rgba(9, 3, 43, 0.897)
+    ),
+    url("music.jpg");
+}
+.content {
+  height: 100vh;
+
+  background-size: cover;
+  background-position: top;
+  color:white;
+  /* text-transform: uppercase; */
+}
+
+.content {
+  margin: 0 auto;
+  width: 400px;
+}
+table,
+th,
+td {
+  border: 1px solid #aaa;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  height: 30px;
+}
+td {
+  text-align: center;
+  padding: 5px;
+}
+.form {
+  margin-top: 20px;
+}
+#content {
+  width: 70%;
+}
