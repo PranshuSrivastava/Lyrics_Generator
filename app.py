@@ -4,7 +4,7 @@ from datetime import datetime
 import tensorflow as tf
 from tensorflow.keras import Model
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional
-
+import os
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
@@ -104,4 +104,6 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+  
