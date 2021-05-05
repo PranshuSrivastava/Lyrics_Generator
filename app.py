@@ -87,14 +87,11 @@ def index():
             working_model=model(X,Y,max_len,total_w,100)
             content=request.form['content']
             output= generate_text(content,max_len,30,working_model)
-            music=User(content=content,gen_lyrics=output)
-            db.session.add(music)
-            db.session.commit()
+            lyrics=User(content=content,gen_lyrics=output)
             
             
         except:
-            return 'There was an error in adding your task'
-        lyrics=User.query.filter_by(id=User.id).first()
+            return 'There was an error in generating the lyrics'
         return render_template('results.html',lyrics=lyrics)
     else:
         return render_template('index.html')
