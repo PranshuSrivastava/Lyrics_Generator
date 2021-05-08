@@ -1,4 +1,5 @@
 # Lyrics Generator
+![alt text](Image.jpg)
 The lyrics generator app takes an input from the user and generates new lyrics based on the input from the user. An LSTM model has been used to generate the lyrics and the dataset used to train the model was taken from [Kaggle](https://www.kaggle.com/paultimothymooney/poetry)
 (beatles.txt).
  
