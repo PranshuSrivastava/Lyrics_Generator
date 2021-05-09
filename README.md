@@ -29,6 +29,4 @@ python app.py
 ```
 Now input the words, which you want to start your lyrics with and wait for 2-3 minutes to see the results.
 
-## License
-This project is licensed under
 
